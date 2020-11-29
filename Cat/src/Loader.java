@@ -3,25 +3,38 @@ public class Loader
 {
     public static void main(String[] args)
     {
-        //Cat cat = new Cat();
 
-        //System.out.println(cat.getStatus());
 
         Cat vaska = new Cat();
-        //vaska.feed(5000.0);
-       /* int i = 0;
+        Cat murka = new Cat();
+        Cat tishka = new Cat();
+        Cat chernyshka = new Cat();
+        Cat luxor = new Cat();
+        System.out.println("vaska_weight = " + vaska.getWeight());
+        System.out.println("murka_weight = " + murka.getWeight());
+        System.out.println("tishka_weight = " + tishka.getWeight());
+        System.out.println("chernyshka_weight = " + chernyshka.getWeight());
+        System.out.println("luxor_weight = " + luxor.getWeight());
+
+
+
+        vaska.feed(1000.0);
+        System.out.println(vaska.getWeight());
+        murka.feed(500.0);
+        System.out.println(murka.getWeight());
+
+
+
+        while (!vaska.getStatus().equals("Exploded")){
+            vaska.feed(1000.0);
+        }
+        System.out.println(vaska.getStatus());
         while (!vaska.getStatus().equals("Dead")){
             vaska.meow();
-            i++;
-        }*/
-        vaska.feed(1000.0);
-
-        System.out.println(vaska.getFeedWeight());
+        }
 
         System.out.println(vaska.getStatus());
-        //System.out.println("i = " + i);
-//
-//
+
 
     }
 }
