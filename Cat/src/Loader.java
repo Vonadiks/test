@@ -20,6 +20,7 @@ public class Loader
 
         System.out.println(vaska.getStatus());
         //System.out.println("i = " + i);
+//
 
     }
 }
