@@ -5,7 +5,8 @@ public class Loader
     {
 
 
-        Cat vaska = new Cat();
+        double feedW;
+        /*Cat vaska = new Cat();
         Cat murka = new Cat();
         Cat tishka = new Cat();
         Cat chernyshka = new Cat();
@@ -33,8 +34,14 @@ public class Loader
             vaska.meow();
         }
 
-        System.out.println(vaska.getStatus());
+        System.out.println(vaska.getStatus());*/
 
-
+        Cat vaska = new Cat();
+        System.out.println(vaska.getWeight());
+        vaska.feed(150.0);
+        feedW = vaska.getFeedWeight();
+        vaska.pee();
+        vaska.pee();
+        System.out.println(feedW);
     }
 }
