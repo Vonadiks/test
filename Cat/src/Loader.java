@@ -8,6 +8,7 @@ public class Loader
         Cat vaska = getKitten();
         Cat murka = getKitten();
         Cat luxor = getKitten();
+        System.out.println(vaska.getWeight() + "," + murka.getWeight() +"," + luxor.getWeight());
 
         /*double feedW;
         Cat vaska = new Cat();
