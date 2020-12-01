@@ -1,11 +1,17 @@
 
 public class Cat
 {
+    private static int count = 0;
+
     private double originWeight;
     private double weight;
 
     private double minWeight;
     private double maxWeight;
+
+    public final int EYES_COUNT = 2;
+    public final double MIN_WEIGHT = 1000.0;
+    public final double MAX_WEIGHT = 9000.0;
 
     public Cat()
     {
@@ -13,6 +19,7 @@ public class Cat
         originWeight = weight;
         minWeight = 1000.0;
         maxWeight = 9000.0;
+        count = count + 1;
 
     }
 
@@ -48,12 +55,17 @@ public class Cat
         return weight;
     }
 
+    public static int getCount(){
+        return count;}
+
     public String getStatus()
     {
         if(weight < minWeight) {
+            count = count - 1;
             return "Dead";
         }
         else if(weight > maxWeight) {
+            count = count - 1;
             return "Exploded";
         }
         else if(weight > originWeight) {
