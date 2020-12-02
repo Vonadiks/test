@@ -9,6 +9,8 @@ public class Cat
     private double minWeight;
     private double maxWeight;
 
+    private Color catColor;
+
     public final int EYES_COUNT = 2;
     public final double MIN_WEIGHT = 1000.0;
     public final double MAX_WEIGHT = 9000.0;
@@ -30,6 +32,14 @@ public class Cat
         maxWeight = 9000.0;
         count = count + 1;
 
+    }
+
+    public Color getCatColor() {
+        return catColor;
+    }
+
+    public void setCatColor(Color catColor){
+        this.catColor = catColor;
     }
 
     public void meow()
