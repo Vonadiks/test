@@ -4,11 +4,20 @@ public class Loader
     public static void main(String[] args)
     {
 
+        Cat cat1 = new Cat();
+        Cat cat2 = new Cat();
+        System.out.println(cat1.getWeight() + " , " + cat2.getWeight());
+        Cat cat3 = Cat.copyCat(cat1);
+        System.out.println(cat1.getWeight() + " , " + cat3.getWeight());
+        Cat cat4 = Cat.copyCat(cat2);
+        System.out.println(cat2.getWeight() + " , " + cat4.getWeight());
 
-        Cat vaska = getKitten();
+        /*Cat vaska = getKitten();
         Cat murka = getKitten();
         Cat luxor = getKitten();
         System.out.println(vaska.getWeight() + "," + murka.getWeight() +"," + luxor.getWeight());
+
+         */
 
         /*double feedW;
         Cat vaska = new Cat();
@@ -55,4 +64,6 @@ public class Loader
     private static Cat getKitten(){
         return new Cat(1100.0);
     }
+
+
 }

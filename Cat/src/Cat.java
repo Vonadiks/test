@@ -34,6 +34,34 @@ public class Cat
 
     }
 
+    public void setWeight(double weight){
+        this.weight = weight;
+    }
+
+   public void setOriginWeight(Double originWeight){
+        this.originWeight = originWeight;
+   }
+
+    public double getOriginWeight() {
+        return originWeight;
+    }
+
+    public void setMinWeight(Double minWeight){
+        this.maxWeight = minWeight;
+    }
+
+    public Double getMinWeight(){
+        return minWeight;
+    }
+
+    public void setMaxWeight(Double maxWeight){
+        this.maxWeight = maxWeight;
+    }
+
+    public Double getMaxWeight(){
+        return maxWeight;
+    }
+
     public Color getCatColor() {
         return catColor;
     }
@@ -76,6 +104,15 @@ public class Cat
 
     public static int getCount(){
         return count;}
+
+    public static Cat copyCat(Cat cat){
+        Cat cCat = new Cat();
+        cCat.setWeight(cat.getWeight());
+        cCat.setOriginWeight(cat.getOriginWeight());
+        cCat.setMinWeight(cat.getMinWeight());
+        cCat.setMaxWeight(cat.getMaxWeight());
+        return cCat;
+    }
 
     public String getStatus()
     {
